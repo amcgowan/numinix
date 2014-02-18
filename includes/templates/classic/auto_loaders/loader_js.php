@@ -23,25 +23,14 @@
  * <?php // php code goes here ?>
  * </style>
  */
-
 $loaders[] = array(
 	'conditions' => array(
-		'pages' => array('index_home', 'product_info'), // if you want to load on all pages, use 'pages' => array('*')  
-		'call_backs' => array('is_logged_in','class_name,method_name') // the loader will attempt to call these functions to check if the css/js files should be loaded
-	),
-	'libs' => array(
-		'jquery' => array('min' => '1.4.2', 'max' => '1.4.2') // use libraries already pre-included
+		'pages' => array('index_home', 'products_new', 'products_featured', 'products_all', 'advanced_search_results'), // if you want to load on all pages, use 'pages' => array('*')  
 	),
 	// the "key" of this associate array is the "path" which is relative to the css or jscript folder
 	// the "value" is the order the file should be loaded
 	'jscript_files' => array(
-		'//code.jquery.com/ui/1.10.3/jquery-ui.js' => 1, // load an externally hosted library/cdn
-		'path/file.css' => 11,
-		'test.php' => 12 // you can even use php files
-	),
-	'css_files' => array(
-		'//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css' => 1, // load externally hosted library/cdn
-		'mycss/something.css' => 11,
-		'something.php'=> 11 // you can even use php files
+		'//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' => 1,
+		'mcgowan.js' => 2
 	)
 );
