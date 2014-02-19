@@ -25,7 +25,7 @@
  */
 $loaders[] = array(
 	'conditions' => array(
-		'pages' => array('index_home', 'products_new', 'products_featured', 'products_all', 'advanced_search_results'), // if you want to load on all pages, use 'pages' => array('*')  
+		'pages' => array('index_home', 'products_new', 'featured_products', 'products_all', 'advanced_search_result'), // if you want to load on all pages, use 'pages' => array('*')  
 	),
 	// the "key" of this associate array is the "path" which is relative to the css or jscript folder
 	// the "value" is the order the file should be loaded
